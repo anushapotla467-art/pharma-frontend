@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #005ea2;
+}
+.alert {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.alert.success {
+  background-color: #e0ffe0;
+  color: #006400;
+}
+
+.alert.error {
+  background-color: #ffe0e0;
+  color: #b00020;
+}
+
