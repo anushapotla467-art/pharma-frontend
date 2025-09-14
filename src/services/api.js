@@ -1,4 +1,6 @@
-const API = "http://localhost:3001/api";
+// const API = "http://localhost:3001/api";
+const API = process.env.REACT_APP_API_URL;
+
 const getToken = () => localStorage.getItem("token");
 
 

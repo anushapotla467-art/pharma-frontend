@@ -12,7 +12,7 @@ export default function WalletLogin({ onLogin }) {
     const message = `Login request for ${address}`;
     const signature = await signer.signMessage(message);
 
-    const res = await fetch("http://localhost:3001/api/auth/wallet-login", {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/auth/wallet-login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ address, signature })
